@@ -1,0 +1,35 @@
+{
+  "name": "nvx-snapshot-ch5",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:archive": "ch5-cli archive -p nvx-snapshot -P samplesource=nvx-snapshot -d build -o dist",
+    "build:ch5": "npm run build && npm run build:archive",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^2.16.0",
+    "@crestron/ch5-theme": "^2.16.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite-plugin-singlefile": "^2.3.0",
+    "vite-plugin-static-copy": "^3.1.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.2"
+  }
+}
